@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Image Showing Example</h1>
+
+
+    <img id="myImage" src=https://images.pexels.com/photos/19145595/pexels-photo-19145595/free-photo-of-golden-retriever.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=loadalt="Sample Image" style="display: none;">
+
+    
+    <button onclick="showImage()">Show Image</button>
+
+    <script>
+        
+        function showImage() {
+            var image = document.getElementById("myImage");
+            if (image) {
+                image.style.display = "block";
+            } else {
+                alert("Image not found!");
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
